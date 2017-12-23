@@ -1,0 +1,3 @@
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\Rim-of-Madness---Biomes\Assemblies\RoMBiomes.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\Rim-of-Madness---Biomes\Source\obj\Debug\RoMBiomes.csprojResolveAssemblyReference.cache
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\Rim-of-Madness---Biomes\Source\obj\Debug\RoMBiomes.dll

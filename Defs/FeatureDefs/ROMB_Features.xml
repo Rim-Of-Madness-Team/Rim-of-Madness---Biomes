@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- - - - - - - - - - - -->
+	<!-- Low-priority biomes -->
+	<!-- - - - - - - - - - - -->
+
+	<FeatureDef>
+		<defName>ROMB_HauntedForest</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>400</order>
+		<rootBiomes>
+			<li>ROMB_HauntedForest</li>
+		</rootBiomes>
+		<acceptableBiomes>
+			<li>BorealForest</li>
+		</acceptableBiomes>
+		<nameMaker>NamerForest</nameMaker>
+	</FeatureDef>
+
+</Defs>

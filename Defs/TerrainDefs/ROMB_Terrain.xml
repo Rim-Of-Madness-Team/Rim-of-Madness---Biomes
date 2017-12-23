@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TerrainDef>
+    <defName>ROMB_PitchSoil</defName>
+    <label>soil (pitch)</label>
+    <texturePath>Terrain/Surfaces/ROMB_PitchSoil</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>340</renderPrecedence>
+    <pathCost>2</pathCost>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+    <scatterType>Rocky</scatterType>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+    </affordances>
+    <terrainFilthDef>FilthDirt</terrainFilthDef>
+    <fertility>1.0</fertility>
+    <takeFootprints>True</takeFootprints>
+  </TerrainDef>
+
+  <TerrainDef>
+    <defName>ROMB_PitchMarshyTerrain</defName>
+    <label>marshy soil (pitch)</label>
+    <texturePath>Terrain/Surfaces/ROMB_PitchMarshyTerrain</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>337</renderPrecedence>
+    <pathCost>15</pathCost>
+    <statBases>
+      <Beauty>-2</Beauty>
+      <Cleanliness>-2</Cleanliness>
+    </statBases>
+    <scatterType>Rocky</scatterType>
+    <affordances>
+      <li>Light</li>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+    </affordances>
+    <terrainFilthDef>FilthDirt</terrainFilthDef>
+    <fertility>0.7</fertility>
+    <takeFootprints>True</takeFootprints>
+    <driesTo>ROMB_PitchSoil</driesTo>
+  </TerrainDef>
+
+  <TerrainDef>
+    <defName>ROMB_PitchSoilRich</defName>
+    <label>rich soil (pitch)</label>
+    <texturePath>Terrain/Surfaces/ROMB_PitchSoilRich</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>335</renderPrecedence>
+    <pathCost>2</pathCost>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+    </affordances>
+    <terrainFilthDef>FilthDirt</terrainFilthDef>
+    <fertility>1.4</fertility>
+    <takeFootprints>True</takeFootprints>
+  </TerrainDef>
+
+  <TerrainDef>
+    <defName>ROMB_PitchMud</defName>
+    <label>mud (pitch)</label>
+    <texturePath>Terrain/Surfaces/ROMB_PitchMud</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>330</renderPrecedence>
+    <pathCost>12</pathCost>
+    <statBases>
+      <Beauty>-2</Beauty>
+      <Cleanliness>-2</Cleanliness>
+    </statBases>
+    <terrainFilthDef>FilthDirt</terrainFilthDef>
+    <fertility>0</fertility>
+    <takeFootprints>True</takeFootprints>
+    <acceptFilth>false</acceptFilth>
+    <avoidWander>true</avoidWander>
+    <driesTo>ROMB_PitchSoil</driesTo>
+  </TerrainDef>
+
+  <TerrainDef>
+    <defName>ROMB_PitchMossyTerrain</defName>
+    <label>lichen-covered dirt (pitch)</label>
+    <texturePath>Terrain/Surfaces/ROMB_PitchMossyTerrain</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>315</renderPrecedence>
+    <pathCost>3</pathCost>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+    <terrainFilthDef>FilthDirt</terrainFilthDef>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+    </affordances>
+    <fertility>1</fertility>
+    <takeFootprints>True</takeFootprints>
+    <acceptFilth>true</acceptFilth>
+    <avoidWander>false</avoidWander>
+  </TerrainDef>
+
+    <TerrainDef>
+    <defName>ROMB_PitchWaterShallow</defName>
+    <label>shallow dark water</label>
+    <texturePath>Terrain/Surfaces/ROMB_PitchWaterShallowRamp</texturePath>
+    <waterDepthShader>Map/WaterDepth</waterDepthShader>
+    <edgeType>Water</edgeType>
+    <renderPrecedence>394</renderPrecedence>
+    <pathCost>12</pathCost>
+    <acceptFilth>false</acceptFilth>
+    <fertility>0</fertility>
+    <avoidWander>true</avoidWander>
+    <changeable>false</changeable>
+    <holdSnow>false</holdSnow>
+    <driesTo>Gravel</driesTo>
+    <takeSplashes>true</takeSplashes>
+    <extinguishesFire>true</extinguishesFire>
+    <tags>
+      <li>Water</li>
+    </tags>
+  </TerrainDef>
+  
+  <TerrainDef>
+    <defName>ROMB_PitchWaterDeep</defName>
+    <label>deep dark water</label>
+    <texturePath>Terrain/Surfaces/ROMB_PitchWaterDeepRamp</texturePath>
+    <waterDepthShader>Map/WaterDepth</waterDepthShader>
+    <edgeType>Water</edgeType>
+    <renderPrecedence>395</renderPrecedence>
+		<passability>Impassable</passability>
+    <pathCost>300</pathCost>
+    <acceptFilth>false</acceptFilth>
+    <fertility>0</fertility>
+    <avoidWander>true</avoidWander>
+    <changeable>false</changeable>
+		<holdSnow>false</holdSnow>
+    <takeSplashes>true</takeSplashes>
+    <extinguishesFire>true</extinguishesFire>
+    <tags>
+      <li>Water</li>
+    </tags>
+  </TerrainDef>
+
+  
+</Defs>
